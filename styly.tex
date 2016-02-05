@@ -7,3 +7,17 @@
   \end{flushright}
   \vspace{10mm}
 }
+
+\newenvironment{mytable2}[1][\unskip] 
+{
+\def\savedcaption{\caption{#1}}
+\begin{table}[h]
+\centering
+\begin{tabular}{lr} 
+}
+{ 
+\end{tabular} 
+\savedcaption
+\end{table} 
+}
+
